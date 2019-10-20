@@ -1,0 +1,115 @@
+.ab-calendar {
+  width: 560px;
+  display: grid;
+  grid-template-columns: 280px 280px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 315px;
+  box-shadow: 0px 0px 10px grey;
+  position: absolute;
+}
+.ab-calendar .display-area {
+  background-color: lightseagreen;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.ab-calendar .display-area .day {
+  background-color: darkcyan;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+.ab-calendar .display-area .date {
+  font-size: 112px;
+  font-style: italic;
+  margin-top: 25px;
+}
+.ab-calendar .display-area .month {
+  font-size: 24px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.ab-calendar .display-area .year {
+  font-size: 24px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+.ab-calendar .input-area {
+  position: relative;
+}
+.ab-calendar .input-area .month-navigator {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+}
+.ab-calendar .input-area .month-navigator .month-previous, .ab-calendar .input-area .month-navigator .month-next {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center center;
+  cursor: pointer;
+}
+.ab-calendar .input-area .month-navigator .month-previous {
+  background-image: url("assets/angle-left-solid.svg");
+}
+.ab-calendar .input-area .month-navigator .month-next {
+  background-image: url("assets/angle-right-solid.svg");
+}
+.ab-calendar .input-area .month-navigator .month {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0px;
+}
+.ab-calendar .input-area .tbl-calendar {
+  font-size: 12px;
+  width: 240px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+.ab-calendar .input-area .tbl-calendar thead th {
+  color: #777777;
+  text-transform: uppercase;
+}
+.ab-calendar .input-area .tbl-calendar tbody tr td {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+.ab-calendar .input-area .tbl-calendar tbody tr td.date-cell {
+  cursor: pointer;
+}
+.ab-calendar .input-area .tbl-calendar tbody tr td.date-cell:hover {
+  background-color: #ebebeb;
+  border-radius: 100%;
+}
+.ab-calendar .input-area .tbl-calendar tbody tr td.date-cell.dt-active {
+  background-color: lightseagreen;
+  border-radius: 100%;
+  color: white;
+}
+.ab-calendar .input-area .month-footer {
+  text-align: right;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.ab-calendar .input-area .month-footer .btn-cancel, .ab-calendar .input-area .month-footer .btn-save {
+  float: right;
+  padding: 5px;
+  background-color: white;
+}
+.ab-calendar .input-area .month-footer .btn-cancel {
+  margin-right: 50px;
+}
+
+/*# sourceMappingURL=calendar.css.map */
